@@ -1,0 +1,38 @@
+<svg height="558" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="558" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">14 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ inquirer-autocomplete-prompt@0.8.0 </tspan>
+<tspan x="10" y="90">  ├── ansi-escapes@1.4.0 </tspan>
+<tspan x="10" y="106">  ├─┬ chalk@1.1.3 </tspan>
+<tspan x="10" y="122">  │ ├── ansi-styles@2.2.1 </tspan>
+<tspan x="10" y="138">  │ ├── escape-string-regexp@1.0.5 </tspan>
+<tspan x="10" y="154">  │ ├─┬ has-ansi@2.0.0 </tspan>
+<tspan x="10" y="170">  │ │ └── ansi-regex@2.1.1 </tspan>
+<tspan x="10" y="186">  │ ├── strip-ansi@3.0.1 </tspan>
+<tspan x="10" y="202">  │ └── supports-color@2.0.0 </tspan>
+<tspan x="10" y="218">  ├── figures@2.0.0 </tspan>
+<tspan x="10" y="234">  ├─┬ inquirer@3.0.5 </tspan>
+<tspan x="10" y="250">  │ ├─┬ cli-cursor@2.1.0 </tspan>
+<tspan x="10" y="266">  │ │ └─┬ restore-cursor@2.0.0 </tspan>
+<tspan x="10" y="282">  │ │   ├─┬ onetime@2.0.1 </tspan>
+<tspan x="10" y="298">  │ │   │ └── mimic-fn@1.1.0 </tspan>
+<tspan x="10" y="314">  │ │   └── signal-exit@3.0.2 </tspan>
+<tspan x="10" y="330">  │ ├── cli-width@2.1.0 </tspan>
+<tspan x="10" y="346">  │ ├─┬ external-editor@2.0.1 </tspan>
+<tspan x="10" y="362">  │ │ └─┬ tmp@0.0.31 </tspan>
+<tspan x="10" y="378">  │ │   └── os-tmpdir@1.0.2 </tspan>
+<tspan x="10" y="394">  │ ├── mute-stream@0.0.7 </tspan>
+<tspan x="10" y="410">  │ ├─┬ run-async@2.3.0 </tspan>
+<tspan x="10" y="426">  │ │ └── is-promise@2.1.0 </tspan>
+<tspan x="10" y="442">  │ ├── rx@4.1.0 </tspan>
+<tspan x="10" y="458">  │ ├─┬ string-width@2.0.0 </tspan>
+<tspan x="10" y="474">  │ │ └── is-fullwidth-code-point@2.0.0 </tspan>
+<tspan x="10" y="490">  │ └── through@2.3.8 </tspan>
+<tspan x="10" y="506">  ├── lodash@4.17.4 </tspan>
+<tspan x="10" y="522">  └─┬ util@0.10.3 </tspan>
+<tspan x="10" y="538">    └── inherits@2.0.1</tspan>
+</text>
+</svg>

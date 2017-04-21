@@ -1,0 +1,466 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>inquirer-autocomplete-prompt (v0.8.0)</a>
+</h1>
+<h4>Autocomplete prompt for inquirer</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inquirer-autocomplete-prompt">module inquirer-autocomplete-prompt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.inquirer-autocomplete-prompt">
+            function <span class="apidocSignatureSpan"></span>inquirer-autocomplete-prompt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.</span>super_
+            <span class="apidocSignatureSpan">(question, rl, answers)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.</span>super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inquirer-autocomplete-prompt.super_">module inquirer-autocomplete-prompt.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.super_">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.</span>super_
+            <span class="apidocSignatureSpan">(question, rl, answers)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inquirer-autocomplete-prompt.super_.prototype">module inquirer-autocomplete-prompt.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype._run">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>_run
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.close">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.getQuestion">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>getQuestion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.handleSubmitEvents">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>handleSubmitEvents
+            <span class="apidocSignatureSpan">(submit)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.run">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>run
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.throwParamError">
+            function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>throwParamError
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inquirer-autocomplete-prompt" id="apidoc.module.inquirer-autocomplete-prompt">module inquirer-autocomplete-prompt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.inquirer-autocomplete-prompt" id="apidoc.element.inquirer-autocomplete-prompt.inquirer-autocomplete-prompt">
+        function <span class="apidocSignatureSpan"></span>inquirer-autocomplete-prompt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Prompt() {
+  Base.apply(this, arguments);
+
+  if (!this.opt.source) {
+    this.throwParamError('source');
+  }
+
+  this.currentChoices = [];
+
+  this.firstRender = true;
+  this.selected = 0;
+
+  // Make sure no default is set (so it won't be printed)
+  this.opt.default = null;
+
+  this.paginator = new Paginator();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_" id="apidoc.element.inquirer-autocomplete-prompt.super_">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.</span>super_
+        <span class="apidocSignatureSpan">(question, rl, answers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (question, rl, answers) {
+  // Setup instance defaults property
+  _.assign(this, {
+    answers: answers,
+    status: 'pending'
+  });
+
+  // Set defaults prompt options
+  this.opt = _.defaults(_.clone(question), {
+    validate: function () {
+      return true;
+    },
+    filter: function (val) {
+      return val;
+    },
+    when: function () {
+      return true;
+    }
+  });
+
+  // Check to make sure prompt requirements are there
+  if (!this.opt.message) {
+    this.throwParamError('message');
+  }
+  if (!this.opt.name) {
+    this.throwParamError('name');
+  }
+
+  // Normalize choices
+  if (Array.isArray(this.opt.choices)) {
+    this.opt.choices = new Choices(this.opt.choices, answers);
+  }
+
+  this.rl = rl;
+  this.screen = new ScreenManager(this.rl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inquirer-autocomplete-prompt.super_" id="apidoc.module.inquirer-autocomplete-prompt.super_">module inquirer-autocomplete-prompt.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.super_" id="apidoc.element.inquirer-autocomplete-prompt.super_.super_">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.</span>super_
+        <span class="apidocSignatureSpan">(question, rl, answers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (question, rl, answers) {
+  // Setup instance defaults property
+  _.assign(this, {
+    answers: answers,
+    status: 'pending'
+  });
+
+  // Set defaults prompt options
+  this.opt = _.defaults(_.clone(question), {
+    validate: function () {
+      return true;
+    },
+    filter: function (val) {
+      return val;
+    },
+    when: function () {
+      return true;
+    }
+  });
+
+  // Check to make sure prompt requirements are there
+  if (!this.opt.message) {
+    this.throwParamError('message');
+  }
+  if (!this.opt.name) {
+    this.throwParamError('name');
+  }
+
+  // Normalize choices
+  if (Array.isArray(this.opt.choices)) {
+    this.opt.choices = new Choices(this.opt.choices, answers);
+  }
+
+  this.rl = rl;
+  this.screen = new ScreenManager(this.rl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inquirer-autocomplete-prompt.super_.prototype" id="apidoc.module.inquirer-autocomplete-prompt.super_.prototype">module inquirer-autocomplete-prompt.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype._run" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype._run">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>_run
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_run = function (cb) {
+  cb();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.close" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype.close">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">close = function () {
+  this.screen.releaseCursor();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.getQuestion" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype.getQuestion">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>getQuestion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getQuestion = function () {
+  var message = chalk.green('?') + ' ' + chalk.bold(this.opt.message) + ' ';
+
+  // Append the default if available, and if question isn't answered
+  if (this.opt.default != null &amp;&amp; this.status !== 'answered') {
+    message += chalk.dim('(' + this.opt.default + ') ');
+  }
+
+  return message;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Render the prompt to screen
+ * @return {Prompt} self
+ */
+
+Prompt.prototype.render = function(error) {
+// Render question
+var content = this.<span class="apidocCodeKeywordSpan">getQuestion</span>();
+var bottomContent = '';
+
+if (this.firstRender) {
+  var suggestText = this.opt.suggestOnly ? ', tab to autocomplete' : '';
+  content += chalk.dim('(Use arrow keys or type to search' + suggestText + ')');
+}
+// Render choices or answer depending on the state
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.handleSubmitEvents" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype.handleSubmitEvents">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>handleSubmitEvents
+        <span class="apidocSignatureSpan">(submit)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">handleSubmitEvents = function (submit) {
+  var self = this;
+  var validate = runAsync(this.opt.validate);
+  var filter = runAsync(this.opt.filter);
+  var validation = submit.flatMap(function (value) {
+    return filter(value).then(function (filteredValue) {
+      return validate(filteredValue, self.answers).then(function (isValid) {
+        return {isValid: isValid, value: filteredValue};
+      }, function (err) {
+        return {isValid: err};
+      });
+    }, function (err) {
+      return {isValid: err};
+    });
+  }).share();
+
+  var success = validation
+    .filter(function (state) {
+      return state.isValid === true;
+    })
+    .take(1);
+
+  var error = validation
+    .filter(function (state) {
+      return state.isValid !== true;
+    })
+    .takeUntil(success);
+
+  return {
+    success: success,
+    error: error
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.run" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype.run">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>run
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function () {
+  return new Promise(function (resolve) {
+    this._run(function (value) {
+      resolve(value);
+    });
+  }.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inquirer-autocomplete-prompt.super_.prototype.throwParamError" id="apidoc.element.inquirer-autocomplete-prompt.super_.prototype.throwParamError">
+        function <span class="apidocSignatureSpan">inquirer-autocomplete-prompt.super_.prototype.</span>throwParamError
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">throwParamError = function (name) {
+  throw new Error('You must provide a `' + name + '` parameter');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Constructor
+ */
+
+function Prompt() {
+Base.apply(this, arguments);
+
+if (!this.opt.source) {
+  this.<span class="apidocCodeKeywordSpan">throwParamError</span>('source');
+}
+
+this.currentChoices = [];
+
+this.firstRender = true;
+this.selected = 0;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
